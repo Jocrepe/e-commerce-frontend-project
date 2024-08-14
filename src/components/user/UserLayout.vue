@@ -56,6 +56,9 @@ const handleSearch = (event, searchText) => {
                 </RouterLink>
             </div>
             <div class="flex-none gap-2">
+
+                <RouterLink :to="{name: 'admin-login'}"><button class="btn btn-ghost">Go to backoffice</button></RouterLink>
+                
                 <div class="form-control">
                     <input @keyup="handleSearch($event, searchText)" v-model="searchText" type="text"
                         placeholder="Search" class="input input-bordered w-24 md:w-auto" />
